@@ -45,9 +45,23 @@
       getFullYear()) - person.year >= 19 );
 
     console.log({allAdults})
+
     // Array.prototype.find()
+    //instead of a subset it returns the first item it finds
+
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
+
+    //first:
+      // const comment = comments.find(function(comment){
+      //   if(comment.id === 823423) {
+      //     return true;
+      //   }
+      // });
+
+      // another way of writing it on a single line:
+      const comment = comments.find(comment => comment.id === 823423);
+      console.log(comment);
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
