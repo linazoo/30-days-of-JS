@@ -31,7 +31,12 @@
 
     // Array.prototype.filter()
     // 1. Filter the list of inventors for those who were born in the 1500's
+     
+      //filter - pass it a function that function will loop over in all items in our array of inventors and 
+      //give us the inventor - for each we decide whether we want to keep it or not
+    const fifteen = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600 ))
 
+    console.table(fifteen);
     // Array.prototype.map()
     // 2. Give us an array of the inventors' first and last names
 
