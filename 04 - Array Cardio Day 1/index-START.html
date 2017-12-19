@@ -49,7 +49,7 @@
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
-    
+
       // you get two items and you're asked to sort them by age 
       // returning one and negative one and that will bubble these up and down in an array
 
@@ -71,6 +71,15 @@
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live?
+
+    //reduce will allow u to build something on everysingle thing
+    //clearner way to do a loop sorta thing. gives you a running total and the inventor
+
+    const totalYears = inventors.reduce((total, inventor) => {
+      return total + (inventor.passed - inventor.year);
+    }, 0);
+
+    console.log(totalYears);
 
     // 5. Sort the inventors by years lived
 
